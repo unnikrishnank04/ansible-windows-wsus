@@ -1,0 +1,17 @@
+---
+
+nodes:
+  - name: winwsus3
+    role: wsus_server
+    app_name: wsus_demo
+    disks:
+      - name: winwsus3-disk0
+        size: 300GiB
+    domain: home.ad
+    memory: 6144
+    cpu: 2
+    ports:
+      - port: 8530
+      - port: 8531
+    user_name: vagrant
+    template: windows-2019-standard-core

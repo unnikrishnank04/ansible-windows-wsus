@@ -1,0 +1,7 @@
+- name: install Windows Updates
+  #hosts: '*windows_target'
+  hosts: all
+
+  roles:
+    - configure-update
+    - update-windows

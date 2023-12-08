@@ -1,0 +1,5 @@
+- name: pull report from wsus server
+  hosts: all
+
+  roles:
+    - wsus-pull-report

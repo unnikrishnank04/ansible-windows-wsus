@@ -1,0 +1,5 @@
+- name: install wsus server
+  hosts: all
+
+  roles:
+    - wsus-auto-approve
